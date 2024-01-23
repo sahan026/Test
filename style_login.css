@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    background-image: url('Vector.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+*{
+    font-family: 'Inter', sans-serif;
+}
+form {
+    width: 530px;
+    height: 690px;
+    border-radius: 50px;
+    background: rgba(86, 86, 86, 0.89);
+    padding: 20px;
+    text-align: left; 
+}
+form h1 {
+    text-align: center; 
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+label {
+    margin-top: 10px;
+    display: block;
+    color: #FEF7F7;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 50px;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px solid #FFF;
+    box-sizing: border-box;
+    width: 100%;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    background-color: transparent;
+    outline: none; 
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom: 3px solid #FFF; 
+}
+.fogot{
+    display: flex;
+    float: right;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    mix-blend-mode: overlay;
+}
+.fogot a{
+    display: flex;
+    text-align: right;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    mix-blend-mode: overlay;
+}
+input[type="submit"]{
+    margin-top: 100px;
+    width: 528px;
+    height: 71px;
+    flex-shrink: 0;
+    border: 1px solid #65B741;
+    border-radius: 1px;
+    background: #65B741;
+    font-size: 32px;
+    color: #FFF;
+    font-weight: 800;
+}
