@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            RESERVE
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <!-- Start top area-->
+        <div class="top_area">
+            <!--start nav bar-->
+            <nav>
+                <ul class="left-part">
+                    <li><a class="bold" href="#feed"> Available Parks</a></li>
+                </ul>
+                <ul class="center-part">
+                    <li><img src="6b99d411e2b0b7154f49d04ade5dc015.png"></li>
+                    <li>EASY PARK</li>
+                </ul>
+                <ul class="right-part">
+                    <li><a class="underline" href="#search">Search</a></li>
+                    <li><a class="underline" href="#home">Sign Up</a></li>
+                    <li><a class="underline" href="#login">Log in</a></li>
+                    <li><a class="underline" href="#about">About</a></li>
+                       <i class="fa-solid fa-right-to-bracket" style="color: #191609;"></i></a></li>
+                </ul>                
+            </nav>
+            <!-- End nav bar-->
+            <div class="container1">
+                <div class="text_box">
+                    <p>
+                        Don’t Worry
+                        <br>
+                        Use Easy Park
+                    </p>
+                    <div classs="text_box2">
+                        Welcome to the future of stress-free parking with Easy Park, the smart solution to simplify your parking experience. Powered by Arduino technology, Easy Park is not just a parking assistant—it's your parking guardian, ensuring a worry-free and efficient parking process.
+                    </div>
+                </div>
+                <img src="1.png">
+            </div>
+        </div>
+        <!-- End top area-->
+        <!--Start box 1("Save your Time")-->
+        <div class="box1">
+            <img src="921fcb69f4d9f650479df7379f782a92.png">
+            <div class="box2">
+                <p>
+                    Save
+                    <br> 
+                    your time using 
+                    <br>
+                    easy park
+                </p>
+                <div class="sub_box1">
+                    <p>Say goodbye to the hassles of finding a parking spot with Easy Park, your ultimate solution for stress-free parking. Our innovative platform is designed to save you time and enhance your parking convenience.</p>
+                    <button class="button">Start Serching...</button>
+                </div>
+            </div>
+        </div>
+        <!--End of box1(Save You Time)-->
+        <!--Start of box3(Easy park can access anywhere)-->
+        <div class="box3">
+            <div class="box4">
+                <p>
+                    Easy
+                    <br>
+                    park can access
+                    <br>
+                    anywhere
+                </p>
+                <div class="sub_box2">
+                    <p>Say goodbye to the hassles of finding a parking spot with Easy Park, your ultimate solution for stress-free parking. Our innovative platform is designed to save you time and enhance your parking convenience.</p>
+                    <button class="button">Start Serching...</button>
+                </div>
+            </div>
+            <img src="e80befd76ab1a530eef9661f3bf6099f.png">
+        </div>
+        <!--End of box3(Easy park can access anywhere)-->
+        <!--search bar-->
+        <div class="search_box">
+            <center>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
+                <ul id="myUL">
+                <li><a href="#">Park: SLTC Reasearch University  </a></li>
+                </ul>
+            
+                <script>
+                function myFunction() {
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                    }
+                }
+                </script>
+            </center>
+        </div>
+        <!--End of the Serach Bar-->
+
+        <!--Slots select area-->
+        <form name="parking"action="parking.php"method="post">
+        </form>
+        <!--Slots select area End-->
+        <footer>
+            <div class="content">
+                <div class="footer-list">
+                    <div class="list-one">
+                        <h3>SHARING</h3>
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/sashin.deemantha/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/sashin_deemantha__/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="list-one down">
+                        <h3>PAGE</h3>
+                        <ul>
+                            <li>Blog</li>
+                            <li>Categories</li>
+                            <li>Resources</li>
+                        </ul>
+                    </div>
+                    <div class="list-one down">
+                        <h3>NETWORK</h3>
+                        <ul>
+                            <li>How many plants</li>
+                            <li>Designstripe</li>
+                        </ul>
+                    </div>
+                    <div class="list-one down">
+                        <h3>LINKS</h3>
+                        <ul>
+                            <li>Credits</li>
+                            <li>Library</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                    <div class="titlecontent">
+                        <a href="#www.jdjkdkjifjdnffkd.lk" target="_blank"><i class="fa-solid fa-circle" style="color: #fff;"></i> EASY PARK</a><br>
+                        <p>© 2023 - 2024 ALPHA Group. Made with <i class="fa-regular fa-heart"></i> by EASY PARK LK™</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--END OF COPYRIGHT-->
+         <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 1000,
+                },
+            });
+        </script>
+    </body>
+</html>
